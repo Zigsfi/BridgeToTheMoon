@@ -1,0 +1,51 @@
+Base path: C:/Program Files (x86)/Unity/Editor/Data
+Pipe name: \\.\pipe\UnityShaderCompiler-2-12032
+Cmd: getPlatforms
+Cmd: compileSnippet
+  api=8 type=0 insize=1008 outsize=1438 kw= ok=1
+Cmd: compileSnippet
+  api=0 type=1 insize=1007 outsize=257 kw= ok=1
+Cmd: compileSnippet
+  api=8 type=1 insize=3253 outsize=1698 kw= ok=1
+Cmd: compileSnippet
+  api=1 type=0 insize=3251 outsize=335 kw= ok=1
+Cmd: compileSnippet
+  api=0 type=0 insize=3267 outsize=609 kw= ok=1
+Cmd: compileSnippet
+  api=1 type=1 insize=3259 outsize=101 kw= ok=1
+Cmd: compileSnippet
+  api=1 type=0 insize=3268 outsize=344 kw= ok=1
+Cmd: compileSnippet
+  api=0 type=0 insize=3261 outsize=375 kw= ok=1
+Cmd: compileSnippet
+  api=8 type=1 insize=3254 outsize=780 kw= ok=1
+Cmd: compileSnippet
+  api=1 type=1 insize=3253 outsize=59 kw= ok=1
+Cmd: compileSnippet
+  api=1 type=0 insize=4698 outsize=132 kw= ok=1
+Cmd: compileSnippet
+  api=8 type=1 insize=4698 outsize=1219 kw= ok=1
+Cmd: compileSnippet
+  api=8 type=0 insize=4703 outsize=3015 kw= ok=1
+Cmd: compileSnippet
+  api=0 type=0 insize=4714 outsize=691 kw= ok=1
+Cmd: compileSnippet
+  api=0 type=0 insize=4822 outsize=436 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_ON DIRLIGHTMAP_OFF ok=1
+Cmd: compileSnippet
+  api=8 type=0 insize=4822 outsize=4380 kw=DIRECTIONAL SHADOWS_SCREEN LIGHTMAP_OFF DIRLIGHTMAP_OFF ok=1
+Cmd: compileSnippet
+  api=8 type=0 insize=4822 outsize=6582 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF VERTEXLIGHT_ON ok=1
+Cmd: compileSnippet
+  api=0 type=1 insize=4822 outsize=535 kw=DIRECTIONAL SHADOWS_SCREEN LIGHTMAP_OFF DIRLIGHTMAP_OFF ok=1
+Cmd: compileSnippet
+  api=0 type=1 insize=4822 outsize=492 kw=DIRECTIONAL SHADOWS_SCREEN LIGHTMAP_ON DIRLIGHTMAP_OFF ok=1
+Cmd: compileSnippet
+  api=1 type=0 insize=2798 outsize=402 kw=SPOT ok=1
+Cmd: compileSnippet
+  api=1 type=0 insize=2798 outsize=383 kw=POINT_COOKIE ok=1
+Cmd: compileSnippet
+  api=1 type=1 insize=2798 outsize=538 kw=POINT ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=2798 outsize=2249 kw=SPOT ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=2798 outsize=1599 kw=DIRECTIONAL_COOKIE ok=1

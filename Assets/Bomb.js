@@ -1,0 +1,40 @@
+﻿#pragma strict
+var time : int;
+var power = 50;
+function Start () {
+	time = 450;
+}
+
+function Update () {
+	time--;
+	if (time < 100 && time > 0)
+		explode();
+	else {
+		if (time <= 0)
+			Destroy(gameObject);
+	}
+}
+
+function explode() {
+	transform.localScale *= 1.2;
+}
+
+
+function OnCollisionEnter(col : Collision) {
+
+	if (collider.gameObject.name != "Player") {
+		var dmg = col.gameObject.GetComponent(DamageManager);
+		if(dmg) {
+			dmg.hurt(power);
+		}
+	}
+}
+
+function OnTriggerEnter(collider : Collider) {
+	if (collider.gameObject.name != "Player") {
+		var dmg = collider.gameObject.GetComponent(DamageManager);
+		if(dmg) {
+			dmg.hurt(power);
+		}
+	}
+}

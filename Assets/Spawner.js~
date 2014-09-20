@@ -1,0 +1,26 @@
+﻿#pragma strict
+var toSpawn : GameObject;
+var enemies : Array;
+function Start () {
+	enemies = new Array();
+}
+function Update() {
+	Spawn();
+}
+function Spawn () {
+	if (Random.Range(0, 1000) > 998 && enemies.length < 15) {
+		var x = Random.Range(3, 10);
+		for (var i = 0; i < x; i++) {
+			enemies.Add(
+			Instantiate(toSpawn, transform.position + Vector3(Random.Range(-10, 10),Random.Range(-10, 10), Random.Range(-10, 10)), transform.rotation));
+		}
+		yield WaitForSeconds(30);
+	}
+
+	for (var x = 0; x < enemies.length; x++) {
+		if (enemies[x] == null) {
+			enemies.RemoveAt(x);
+		}
+	}
+	print (enemies.length);
+}

@@ -1,0 +1,43 @@
+﻿#pragma strict
+var con  : Construction;
+var font : Font;
+var style : GUIStyle;
+var message = "";
+var messages : Array;
+var messageTime : float = 55;
+function Start () {
+	messages = new Array();
+	messages.Push("Connect the white moon to Earth");
+	messages.Push("Bring the grey cubes to the bridge to earn points");
+	messages.Push("WASD to move, mouse to aim");
+	messages.Push("Left Click for weapons, Right for tractor beam");
+	messages.Push("Scroll wheel to change weapons");
+	messages.Push("Bring cubes to the colored moons to upgrade your weapons");
+	messages.Push("Or destroy them to regain health");
+
+	style = GUIStyle();
+	style.font = font;
+	style.fontSize = 16;
+	style.alignment = TextAnchor.UpperCenter;
+}
+
+function OnGUI () {
+	GUI.Label(Rect(Screen.width /2 - 300, Screen.height - 400, 600, 100), message, style);	
+	
+}
+
+function addMessage(msg : String) {
+	messages.Push(msg.lower());
+}
+
+function Update () {
+	messageTime -= Time.deltaTime * 10;
+	print (messageTime);
+	if (messageTime <= 0) {
+		try {
+			message ="<color=grey>"+ messages[0]+"</color>";
+			messages.RemoveAt(0);
+			messageTime = 55; 
+		}catch(e) { message = "";}
+	}
+}
